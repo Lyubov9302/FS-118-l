@@ -1,0 +1,206 @@
+
+body {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-logo {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: #111;
+}
+
+.header-logo-italic {
+    font-style: italic;
+}
+
+.header-menu-item {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: -0.02em;
+color: #111;
+}
+
+.header-menu-item:hover {
+    color: #fd9222;
+}
+
+.hero{
+    background-color: #1e1823;;
+}
+
+.hero-title {
+font-weight: 500;
+font-size: 28px;
+line-height: 1.21;
+letter-spacing: -0.03em;
+color: #fff;
+}
+
+.hero-btn {
+background: #fd9222;
+font-weight: 600;
+font-size: 14px;
+color: #fff;
+}
+
+.hero-anchor-link {
+font-weight: 600;
+font-size: 14px;
+color: #fff;
+}
+
+.features {
+    background: #1e1823;
+}
+
+.features-subtitle {
+font-weight: 600;
+font-size: 18px;
+color: #fff;
+}
+
+.features-item-text {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);  
+}
+
+.ingredients-title {
+font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #111;
+}
+
+.ingred-title {
+    color: #fd9222;
+}
+
+.ingredients-descr {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-align: center;
+color: #111;
+}
+
+.ingredients-name-white {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ingredients-name-black {
+font-weight: 600;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #111;
+}
+
+.recipe-title {
+font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #111;
+}
+
+.title-recipe {
+    color: #fd9222;
+}
+
+.recipe-subtitle {
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+color: #111;
+}
+
+.recipe-steps {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color: #111;
+}
+
+
+.title-review {
+    color: #fd9222;
+}
+
+.review-title {
+font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #111;
+}
+
+.review-names {
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+text-align: center;
+color: #111;
+}
+
+.review-text { 
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+text-align: center;
+color: rgba(17, 17, 17, 0.7);
+}
+
+.btn-review {
+font-weight: 600;
+font-size: 18px;
+color: #111;
+}
+
+.footer {
+background: #1e1823; 
+}
+
+.footer-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.text-footer {
+    color: #fd9222;
+}
+
