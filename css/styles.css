@@ -17,6 +17,17 @@ button {
     cursor: pointer;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 .section-title {
     font-weight: 600;
     font-size: 24px;
@@ -30,6 +41,11 @@ button {
 .accent {
     color: #fd9222;
 } 
+
+.header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
 
 .header-logo {
     font-style: italic;
@@ -57,7 +73,13 @@ color: #111;
 }
 
 .hero{
-    background-color: #1e1823;;
+    background-color: #1e1823;
+    border-radius: 30px;
+    margin-bottom: 72px;
+}
+
+.hero-wrapper {
+    padding: 375px 40px 40px 40px;
 }
 
 .hero-title {
@@ -66,6 +88,7 @@ font-size: 28px;
 line-height: 1.21;
 letter-spacing: -0.03em;
 color: #fff;
+margin-bottom: 32px;
 }
 
 .hero-btn {
@@ -90,12 +113,15 @@ color: #fff;
 
 .features {
     background-color: #1e1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .features-subtitle {
 font-weight: 600;
 font-size: 18px;
 color: #fff;
+margin-bottom: 18px;
 }
 
 .features-item-text {
