@@ -2,6 +2,7 @@
 body {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
 
 }
 
@@ -117,6 +118,11 @@ color: #fff;
     padding-bottom: 50px;
 }
 
+.features-list {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
 .features-subtitle {
 font-weight: 600;
 font-size: 18px;
@@ -132,8 +138,14 @@ margin-bottom: 18px;
 }
 
 
+.ingredients {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 
-
+.ingredients-title {
+    margin-bottom: 28px;
+}
 
 .ingredients-descr {
 font-size: 14px;
@@ -141,8 +153,15 @@ line-height: 1.29;
 letter-spacing: -0.02em;
 text-align: center;
 color: #111;
+margin-bottom: 50px;
 }
 
+.ingredients-item {
+border: 1px solid #fd9222;
+border-radius: 15px;
+width: 270px;
+height: 270px;
+}
 
 .ingredients-name {
 font-weight: 600;
@@ -151,15 +170,38 @@ line-height: 1.29;
 letter-spacing: -0.02em;
 text-transform: uppercase;
 color: #111;
+padding: 28px 32px;
 }
 
+.recipe {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.recipe-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 32px;
+}
 
+.recipe-title {
+    
+
+}
 .recipe-subtitle {
 font-weight: 600;
 font-size: 18px;
 line-height: 1.33;
 color: #111;
+margin-bottom: 28px;
+}
+
+.recipe-item {
+    margin-bottom: 24px;
+}
+
+.recipe-item:last-child {
+    margin-bottom: 0;;
 }
 
 .recipe-steps {
@@ -170,8 +212,18 @@ color: #111;
 }
 
 
+.review {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.review-title {
+    margin-botoom: 50px;
+}
 
+.review-list {
+    margin-bottom: 50px;
+}
 
 .review-names {
 font-weight: 600;
