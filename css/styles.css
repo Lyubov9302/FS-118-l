@@ -214,11 +214,11 @@ color: #111;
 
 .review {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .review-title {
-    margin-botoom: 50px;
+    margin-bottom: 50px;
 }
 
 .review-list {
@@ -257,8 +257,13 @@ background-color: #1e1823;
     line-height: 1.21;
     letter-spacing: -0.02em;
     color: #fff;
+    padding-top: 50px;
+    padding-bottom: 180px;
 }
 
+.footer-menu {
+    padding-top: 78px;
+}
 
 .address-title {
 font-weight: 500;
