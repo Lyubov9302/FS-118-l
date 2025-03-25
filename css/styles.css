@@ -1,6 +1,5 @@
 
 body {
-    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     background-color: #fafafa;
 
@@ -8,6 +7,8 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -21,6 +22,21 @@ button {
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+} 
+
 
 .container {
     width: 1166px;
@@ -36,17 +52,29 @@ p, h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: #111;  
-}
+    color: #111;
+  }
 
-.accent {
+
+  .accent {
     color: #fd9222;
 } 
 
-.header {
-    padding-top: 28px;
-    padding-bottom: 28px;
+
+
+
+.header-navigation {
+    display: flex;
+    gap: 90px;
 }
+
+
+.header-menu-list {
+    display: flex;
+    margin-left: auto;
+    gap: 24px;
+}
+
 
 .header-logo {
     font-style: italic;
@@ -55,11 +83,15 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.11;
     letter-spacing: -0.03em;
     color: #111;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
+
 
 .header-logo-italic {
     font-style: italic;
 }
+
 
 .header-menu-link {
 font-weight: 500;
@@ -67,13 +99,34 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: -0.02em;
 color: #111;
+padding-top: 28px;
+padding-bottom: 28px;
+display: inline-block;
 }
 
-.header-menu-link:hover {
+.header-menu-link:hover, .header-menu-link:focus {
     color: #fd9222;
 }
 
-.hero{
+.list {
+    display: flex;
+    gap: 24px;
+      display: inline-block;
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+
+
+
+
+.hero {
     background-color: #1e1823;
     border-radius: 30px;
     margin-bottom: 72px;
@@ -90,18 +143,31 @@ line-height: 1.21;
 letter-spacing: -0.03em;
 color: #fff;
 margin-bottom: 32px;
+max-width: 484px;
 }
 
+
+
+
 .hero-btn {
+background-color: #fd9222;
 font-weight: 600;
 font-size: 14px;
 color: #fff;
+border-radius: 100px;
+padding: 14px 40px;
+border: none;
+margin-right: 14px;
 }
 
 .hero-anchor-link {
+border: 1px solid #fff;
 font-weight: 600;
 font-size: 14px;
 color: #fff;
+border-radius: 100px;
+padding: 14px 40px;
+background-color: transparent;
 }
 
 .hero-scroll-link {
@@ -110,7 +176,18 @@ color: #fff;
     line-height: 1.29;
     letter-spacing: -0.03em;
     color: #fff;  
+    margin-left: auto;
+
 }
+
+..hero-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 
 .features {
     background-color: #1e1823;
@@ -119,9 +196,16 @@ color: #fff;
 }
 
 .features-list {
+    display: flex;
     padding-left: 36px;
     padding-right: 36px;
+    gap: 70px;
 }
+
+.features-item {
+    width: calc((100% - 140px)/3)
+}
+
 
 .features-subtitle {
 font-weight: 600;
@@ -138,57 +222,73 @@ margin-bottom: 18px;
 }
 
 
-.ingredients {
+
+
+
+
+.taste {
     padding-top: 100px;
     padding-bottom: 50px;
+    display: flex;
 }
 
-.ingredients-title {
+.taste-title {
     margin-bottom: 28px;
+    max-width: 411px;
+    margin: 0 auto;
 }
 
-.ingredients-descr {
+.taste-text {
 font-size: 14px;
 line-height: 1.29;
 letter-spacing: -0.02em;
 text-align: center;
 color: #111;
 margin-bottom: 50px;
+max-width: 486px;
+  margin: 0 auto;
 }
 
-.ingredients-item {
+.taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 19px;
+    row-gap: 24px;
+  }
+
+
+.taste-item {
 border: 1px solid #fd9222;
 border-radius: 15px;
-width: 270px;
-height: 270px;
+padding: 28px 32px;
+width: calc((100% - 57px)/4)
 }
 
-.ingredients-name {
+.taste-subtitle {
 font-weight: 600;
 font-size: 14px;
 line-height: 1.29;
 letter-spacing: -0.02em;
 text-transform: uppercase;
 color: #111;
-padding: 28px 32px;
 }
 
-.recipe {
+
+
+
+.made {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.recipe-content {
+.made-content {
     background-color: #fff;
     border-radius: 15px;
     padding: 32px;
 }
 
-.recipe-title {
-    
 
-}
-.recipe-subtitle {
+.made-subtitle {
 font-weight: 600;
 font-size: 18px;
 line-height: 1.33;
@@ -196,15 +296,15 @@ color: #111;
 margin-bottom: 28px;
 }
 
-.recipe-item {
+.made-item {
     margin-bottom: 24px;
 }
 
-.recipe-item:last-child {
+.made-item:last-child {
     margin-bottom: 0;;
 }
 
-.recipe-steps {
+.made-item-text {
 font-size: 14px;
 line-height: 1.29;
 letter-spacing: -0.02em;
@@ -212,28 +312,29 @@ color: #111;
 }
 
 
-.review {
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
+
+
+
 
 .review-title {
-    margin-bottom: 50px;
+  
 }
 
 .review-list {
-    margin-bottom: 50px;
+    
 }
 
-.review-names {
-font-weight: 600;
-font-size: 18px;
-line-height: 1.33;
-text-align: center;
-color: #111;
-}
 
-.review-text { 
+.review-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #111;
+  }
+
+
+.review-item-text { 
 font-size: 14px;
 line-height: 1.29;
 letter-spacing: -0.02em;
@@ -241,17 +342,21 @@ text-align: center;
 color: rgba(17, 17, 17, 0.7);
 }
 
-.btn-review {
+.review-btn {
 font-weight: 600;
 font-size: 18px;
 color: #111;
 }
 
+
+
+
+
 .footer {
 background-color: #1e1823; 
 }
 
-.footer-text {
+.footer-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
@@ -261,23 +366,22 @@ background-color: #1e1823;
     padding-bottom: 180px;
 }
 
-.footer-menu {
-    padding-top: 78px;
-}
+.footer-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #fff;
+  }
 
-.address-title {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.29;
-text-align: center;
-color: #fff;
-}
+
+
 
 .footer-address {
     font-style: normal;
 }
 
-.address-link {
+.footer-address-link {
 font-size: 14px;
 line-height: 1.29;
 letter-spacing: -0.02em;
@@ -286,10 +390,13 @@ color: #fff;
 }
 
 
-.footer-nav {
+.footer-menu-link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: -0.02em;
 color: #fff;
 }
+
+
+
