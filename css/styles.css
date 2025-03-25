@@ -233,9 +233,11 @@ margin-bottom: 18px;
 }
 
 .taste-title {
-    margin-bottom: 28px;
     max-width: 411px;
-    margin: 0 auto;
+    margin-top: 0;
+margin-right: auto;
+margin-bottom: 28px;
+margin-left: auto;
 }
 
 .taste-text {
@@ -244,14 +246,16 @@ line-height: 1.29;
 letter-spacing: -0.02em;
 text-align: center;
 color: #111;
+margin-top: 0;
+margin-right: auto;
 margin-bottom: 50px;
+margin-left: auto;
 max-width: 486px;
-  margin: 0 auto;
+  margin-top: 0;
 }
 
 .taste-list {
     display: flex;
-    flex-wrap: wrap;
     column-gap: 19px;
     row-gap: 24px;
   }
@@ -288,6 +292,18 @@ color: #111;
 }
 
 
+.made-title  {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    margin-bottom: 50px;
+}
+
+
 .made-subtitle {
 font-weight: 600;
 font-size: 18px;
@@ -311,19 +327,35 @@ letter-spacing: -0.02em;
 color: #111;
 }
 
+.made-container {
+    display: flex;
+    gap: 20px;
+}
 
 
 
 
+
+
+.review {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 .review-title {
-  
+    margin-bottom: 50px;
+
 }
 
 .review-list {
-    
+    display: flex;
+    margin-bottom: 50px;
+    gap: 28px;
 }
 
+.review-item {
+align-items: center;
+}
 
 .review-subtitle {
     font-weight: 600;
@@ -343,13 +375,21 @@ color: rgba(17, 17, 17, 0.7);
 }
 
 .review-btn {
+display: block;
 font-weight: 600;
 font-size: 18px;
 color: #111;
+border: 1px solid #fd9222;
+border-radius: 100px;
+padding: 14px 40px;
+min-width: 222px;
+height: 50px;
+margin: 0 auto;
 }
 
 
-
+.
+}
 
 
 .footer {
