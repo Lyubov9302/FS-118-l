@@ -129,7 +129,17 @@ display: inline-block;
 .hero {
     background-color: #1e1823;
     border-radius: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-bottom: 72px;
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+        ),
+     url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-wrapper {
@@ -339,7 +349,7 @@ color: #111;
 
 .review {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .review-title {
@@ -388,13 +398,15 @@ margin: 0 auto;
 }
 
 
-.
-}
+
 
 
 .footer {
 background-color: #1e1823; 
+
 }
+
+
 
 .footer-title {
     font-weight: 500;
@@ -402,8 +414,7 @@ background-color: #1e1823;
     line-height: 1.21;
     letter-spacing: -0.02em;
     color: #fff;
-    padding-top: 50px;
-    padding-bottom: 180px;
+    max-width: 300px;
 }
 
 .footer-subtitle {
@@ -430,12 +441,22 @@ color: #fff;
 }
 
 
+.footer-menu-list {
+display: flex;
+gap: 24px;
+
+}
+
 .footer-menu-link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: -0.02em;
 color: #fff;
+}
+
+.container-address {
+    margin-left: auto;
 }
 
 
