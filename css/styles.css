@@ -112,10 +112,17 @@ display: inline-block;
     display: flex;
     gap: 24px;
     margin-left: auto;
-      a {display: inline-block;
+      a {
+      display: inline-block;
       padding-top: 28px;
       padding-bottom: 28px;
     }
+}
+
+
+.header-soc-icon {
+    fill: transparent;
+    stroke: #111111;
 }
 
     .header-container {
@@ -339,7 +346,6 @@ margin-bottom: 28px;
     border-radius: 100%;
     background-color: #4c4c4c;
     border: 1px solid #eceded;
-    flex-shrink: 0;
    
 }
 
