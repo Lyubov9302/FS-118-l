@@ -457,8 +457,42 @@ color: #111;
 }
 
 .review-item {
+display: flex;
+position: relative;
+flex-direction: column;
 align-items: center;
+
 }
+
+
+.textreview_box {
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 360px;
+    height: 200px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    background: #fff;
+}
+
+.reviewphoto_name {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 18px;
+max-width: 200px;
+margin-bottom: 24px;
+margin-right: 80px;
+margin-left: 80px;
+
+}
+
+.review-image {
+    position: absolute;
+    top: -40px;
+}
+
+
 
 .review-subtitle {
     font-weight: 600;
@@ -475,6 +509,8 @@ line-height: 1.29;
 letter-spacing: -0.02em;
 text-align: center;
 color: rgba(17, 17, 17, 0.7);
+padding: 104px 24px 24px 24px;
+
 }
 
 .review-btn {
@@ -552,5 +588,116 @@ color: #fff;
     margin-left: auto;
 }
 
+.backdrop {
+width: 100%;
+height: 100%;
+
+background-color: rgba(17, 17, 17, 0.0396);
+position: fixed;
+top: 0;
+
+}
 
 
+.modal {
+    width: 517px;
+    min-height: 794px;
+    border-radius: 15px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+ 
+}
+
+
+.modal-close-btn {
+position: absolute;
+top: 26px;
+right: 26px;
+}
+
+.modal-title {
+text-align: left;
+max-width: 300px;
+margin-bottom: 40px;
+}
+
+.modal-input {
+border: 1px solid rgba(17, 17, 0.25);
+border-radius: 13px;
+width: 100%;
+height: 68px;
+background-color: transparent;
+padding-left: 68px;
+color: purple;
+outline: transparent;
+}
+
+.modal-input:focus {
+    outline: #fd9222;
+}
+
+.modal-input:focus + .modal-icon {
+    stroke:#fd9222;
+}
+
+.modal-input::placeholder {
+    color: #111111;
+
+
+.modal-input:required {
+background-color: teal;
+}
+
+.modal-input:disabled {
+    background-color: #cdc9c9;
+}
+
+.modal-label {
+font-weight: 400;
+font-size: 14px;
+letter-spacing: -0.02em;
+color: rgba(64, 64, 64, 0.3);
+display: inline-block;
+margin-bottom: 8px;
+}
+
+
+.modal-input {
+    margin-bottom: 18px;
+}
+
+.modal-icon {
+    fill: transparent;
+    stroke:  #404040;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.modal-btn {
+    display: block;
+    margin: 0 auto;
+  
+}
+
+
+.modal-textarea {
+    border: 1px solid rgba(17, 17, 17, 0.25);
+  border-radius: 13px;
+  width: 100%;
+  height: 137px;
+  background-color: transparent;
+  padding: 8px 16px;
+  color: purple;
+  outline: transparent;
+  resize: none;
+}
