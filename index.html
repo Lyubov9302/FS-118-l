@@ -158,7 +158,7 @@
         <div class="container">
         <h2 class="made-title section-title">HOW IT'S <span class=
           "accent">MADE?</span></h2>
-        <div class="made-container">
+        <div class="made-wrapper">
         <img
           src="./images/howmade.jpg"
           alt="chocolate making process"
@@ -270,10 +270,11 @@
 
     <footer class="footer">
       <div class="container">
+        <div class="footer-top">
       <p class="footer-title">
         <span class="accent">Chocolate</span> a delicious cure for a bad day
       </p>
-      <div class="container-address">
+    <div class="footer-contacts">
       <p class="footer-subtitle">Contact us</p>
       <address class="footer-address">
         <ul class="footer-address-list">
@@ -293,6 +294,8 @@
         </ul>
       </address>
     </div>
+    </div>
+    <div class="footer-bottom">
       <ul class="footer-menu-list">
         <li class="footer-menu-item">
           <a
@@ -316,10 +319,25 @@
           </a>
         </li>
       </ul>
+
+
+      <form class="footer-form">
+        <label aria-label="footer-email" class="footer-label">
+          <input 
+          class="footer-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          />
+        </label>
+        <button class="footer-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
     </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
       <button 
       type="button" 
@@ -395,6 +413,46 @@
          placeholder="Enter text">
         </textarea>
         </div>
+         <div class="modal-field">
+          Question?
+          <label for="one">One</label>
+          <input
+          type="checkbox"
+          id="one"
+          name="question"
+          value="one"
+          />
+          <label for="two">Two</label>
+          <input
+          type="checkbox"
+          id="two"
+          name="question"
+          value="two"
+          />
+         </div>
+
+         <div class="modal-field">
+         <input type="checkbox" 
+         name="policy" 
+         id="policy" 
+         class="modal-check visually-hidden"
+         value="true"
+         />
+         <label 
+         class="modal-check-text" 
+         for="policy">
+          <span class="modal-checkbox">
+          <svg 
+          class="modal-checkbox-icon" 
+          width="10" 
+          height="10">
+          <use href="./images/icons.svg#icon-check-icon"></use>
+          </svg>
+
+          </span>I accept the terms and conditions of the <a href="">Privacy Policy</a></label></span>
+
+         </div>
+
           <button 
           type="submit" 
           class="modal-btn">
