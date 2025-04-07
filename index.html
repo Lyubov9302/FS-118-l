@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chocolate</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@700;400..700&display=swap" rel="stylesheet">
@@ -16,22 +23,43 @@
       <nav class="header-navigation">
         <a href="./index.html" class="header-logo"><span class="header-logo-italic">SIMPLY</span> CHOCOLATE</a>
         <ul class="header-menu-list">
-          <li class="header-menu-item"><a class="header-menu-link" href="">Home</a></li>
-          <li class="header-menu-item"><a class="header-menu-link" href="">How it's made?</a></li>
-          <li class="header-menu-item"><a class="header-menu-link" href="">Chocolate is loved</a></li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" 
+            href="">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" 
+            href="">How it's made?</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link"
+             href="">Chocolate is loved</a>
+            </li>
         </ul>
       </nav>
+
       <ul class="header-soc-list">
-        <li class="header-soc-item"><a class="header-soc-link" href="">
-          <svg class="header-soc-icon" width="24" height="24" 
+        <li class="header-soc-item">
+          <a class="header-soc-link" 
+          href="">
+          <svg 
+          class="header-soc-icon" 
+          width="24" 
+          height="24" 
           >
           <use href="./images/icons.svg#icon-instagram"></use>
-        </svg></a></li>
-        <li class="header-soc-item"><a class="header-soc-link" href="">
-          <svg class="header-soc-icon" width="24" height="24"
+        </svg>
+      </a></li>
+        <li class="header-soc-item">
+          <a class="header-soc-link" 
+          href="">
+          <svg class="header-soc-icon"
+           width="24" 
+           height="24"
           >
           <use href="./images/icons.svg#icon-twitter"></use>
-        </svg></a></li>
+        </svg>
+      </a></li>
       </ul>
     </div>
     </header>
@@ -44,16 +72,30 @@
           Treat yourself or a loved one to <br />our finest ingredients for a moment
           of pure delight!
         </h1>
+
         <div class="hero-buttons">
-        <button type="button" class="hero-btn">Buy now</button>
-        <a href="#recipe" class="hero-anchor-link">How it's made</a>
-        <a href="#features" class="hero-scroll-link">scroll dowm</a>
+        <button 
+        type="button"
+         class="hero-btn">
+         Buy now
+        </button>
+        <a
+         href="#made" 
+         class="hero-anchor-link">
+         How it's made
+        </a>
+        <a
+         href="#features" 
+         class="hero-scroll-link">
+         scroll dowm
+        </a>
       </div>
       </div>
       </div>
       </section>
 
       <section id="features" class="features">
+        <div class="container">
         <h2 class="visually-hidden">Features</h2>
         <ul class="features-list">
           <li class="features-item">
@@ -85,12 +127,15 @@
             </p>
           </li>
         </ul>
-    
+        </div>
       </section>
 
       <section class="taste">
         <div class="container">
-        <h2 class="taste-title section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="accent">TASTE</span> SENSATION</h2>
+        <h2 class="taste-title section-title">
+          IT ALL ADDS UP TO ONE EXCEPTIONAL 
+          <span class="accent">TASTE</span> SENSATION
+        </h2>
         <p class="taste-text">
           At Simply Chocolate, we believe that the secret to exceptional
           chocolate is in the details. From the sourcing of the finest
@@ -152,12 +197,10 @@
       </div>
       </section>
 
-
-
-      <section class="made">
+      <section id="made" class="made">
         <div class="container">
-        <h2 class="made-title section-title">HOW IT'S <span class=
-          "accent">MADE?</span></h2>
+        <h2 class="made-title section-title">
+          HOW IT'S <span class="accent">MADE?</span></h2>
         <div class="made-wrapper">
         <img
           src="./images/howmade.jpg"
@@ -208,7 +251,9 @@
 
       <section class="review">
         <div class="container">
-        <h2 class="review-title section-title"><span class="accent">Chocolate</span> is loved</h2>
+        <h2 class="review-title section-title">
+          <span class="accent">Chocolate</span> is loved
+        </h2>
         <ul class="review-list">
           <li class="review-item">
             
@@ -260,7 +305,11 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="review-btn">Leave a review</button>
+        <button
+         type="button" 
+         class="review-btn">
+         Leave a review
+        </button>
       </div>
       </section>
     </main>
@@ -322,7 +371,9 @@
 
 
       <form class="footer-form">
-        <label aria-label="footer-email" class="footer-label">
+        <label 
+        aria-label="footer-email" 
+        class="footer-label">
           <input 
           class="footer-input"
           type="email"
@@ -331,13 +382,22 @@
           placeholder="Enter your email"
           />
         </label>
-        <button class="footer-btn" type="submit">Subscribe</button>
+        <button 
+        class="footer-btn" 
+        type="submit">
+        Subscribe
+        <svg
+         width="24"
+         height="24">
+         <use href="./images/icons.svg#icon-user"></use>
+        </svg>
+      </button>
       </form>
     </div>
     </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
       <button 
       type="button" 
@@ -396,6 +456,7 @@
          name="user-tel"
          placeholder="Enter Number"
          required
+         value="+380"
           />
         </label>
         </div>
@@ -418,40 +479,30 @@
           <label for="one">One</label>
           <input
           type="checkbox"
-          id="one"
-          name="question"
-          value="one"
+          id="policy"
+          name="policy"
+          value="true"
+          class="modal-check visually-hidden"
           />
-          <label for="two">Two</label>
-          <input
-          type="checkbox"
-          id="two"
-          name="question"
-          value="two"
-          />
+          <label for="policy"
+          class="modal-check-text"
+          >
+            <span class="modal-chackbox">
+              <svg 
+              class="modal-checkbox-icon" 
+              width="10" 
+              height="10"
+              >
+                <use href="./images/icons.svg#icon-check-icon"></use>
+              </svg>
+          </span>
+          I accept the terms and conditions of the&nbsp;
+          <a href="">Privacy Policy</a>
+        </label>
          </div>
 
-         <div class="modal-field">
-         <input type="checkbox" 
-         name="policy" 
-         id="policy" 
-         class="modal-check visually-hidden"
-         value="true"
-         />
-         <label 
-         class="modal-check-text" 
-         for="policy">
-          <span class="modal-checkbox">
-          <svg 
-          class="modal-checkbox-icon" 
-          width="10" 
-          height="10">
-          <use href="./images/icons.svg#icon-check-icon"></use>
-          </svg>
-
-          </span>I accept the terms and conditions of the <a href="">Privacy Policy</a></label></span>
-
-         </div>
+          
+         
 
           <button 
           type="submit" 
