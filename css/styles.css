@@ -26,6 +26,8 @@ button {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto; 
 }
 
 p, 
@@ -53,12 +55,14 @@ overflow: hidden;
 } 
 
 
+
 .container {
-    width: 1166px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 auto;
-}
+  }
 
 .section-title {
     font-weight: 600;
@@ -244,20 +248,23 @@ transition-duration: 500ms;
 
 .features {
     background-color: #1e1823;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .features-list {
-    display: flex;
-    padding-left: 36px;
-    padding-right: 36px;
-    gap: 70px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
 }
 
 .features-item {
-    width: calc((100% - 140px) / 3);
+padding-right: 28px;
+    /*width: calc((100% - 140px) / 3);*/
 }
+
 
 
 .features-subtitle {
@@ -274,22 +281,32 @@ margin-bottom: 18px;
     color: rgba(255, 255, 255, 0.7);  
 }
 
-
-
+.features-item-icon {
+    display: none;
+   /* width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #4c4c4c;
+    margin-bottom: 22px;*/
+}
 
 
 
 .taste {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    /* padding-top: 100px;
+    padding-bottom: 50px; */
     display: flex;
 }
 
 .taste-title {
-max-width: 411px;
-margin: 0 auto;
-margin-bottom: 28px;
-}
+    /* max-width: 411px; */
+    max-width: 283px;
+    margin: 0 auto;
+    /* margin-bottom: 28px; */
+    margin-bottom: 24px;
+  }
 
 .taste-text {
 font-size: 14px;
@@ -298,23 +315,28 @@ letter-spacing: -0.02em;
 text-align: center;
 color: #111;
 margin: 0 auto;
-margin-bottom: 50px;
-max-width: 486px;
+/* margin-bottom: 50px; */
+/* max-width: 486px; */
+max-width: 100%;
+margin-bottom: 32px;
   
 }
 
 .taste-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 19px;
-    row-gap: 24px;
+    /* column-gap: 19px;
+    row-gap: 24px; */
+    gap: 20px;
   }
+
 
 
 .taste-item {
 border: 1px solid #fd9222;
 border-radius: 15px;
-width: calc((100% - 57px) / 4);
+/* width: calc((100% - 57px) / 4); */
+width: 100%;
 }
 
 
@@ -367,8 +389,10 @@ color: #111;
 
 
 .made {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -380,11 +404,13 @@ color: #111;
     text-transform: uppercase;
     text-align: center;
     color: #111;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    margin-bottom: 32px;
 }
 
 .made-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -392,7 +418,8 @@ color: #111;
 .made-content {
     background-color: #fff;
     border-radius: 15px;
-    padding: 32px;
+    /* padding: 32px; */
+    padding: 20px 14px;
   }
   
   
@@ -401,11 +428,13 @@ font-weight: 600;
 font-size: 18px;
 line-height: 1.33;
 color: #111;
-margin-bottom: 28px;
+/* margin-bottom: 28px; */
+margin-bottom: 20px;
 }
 
 .made-item {
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+   margin-bottom: 18px;
    position: relative;
    padding-left: 16px;
 }
@@ -439,8 +468,10 @@ color: #111;
 
 
 .review {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
 }
 
 
@@ -452,12 +483,16 @@ color: #111;
 
 .review-list {
     display: flex;
-    margin-bottom: 50px;
-    gap: 28px;
+    flex-wrap: wrap;
+    /* margin-bottom: 50px; */
+    /* gap: 28px; */
+    margin-bottom: 32px;
+    gap: 48px;
 }
 
 .review-item {
-width: calc((100% - 56px) / 3);
+/* width: calc((100% - 56px) / 3); */
+width: 100%;
 border: 1px solid rgba(17, 17, 17, 0.1);
 border-radius: 15px;
 box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
@@ -782,3 +817,171 @@ fill: transparent;
     fill: #fafafa;
     
  }
+
+
+ @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+.made .container {
+    max-width: 678px;
+}
+
+.section-title {
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+.features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.features-list {
+    gap: 32px;
+}
+
+.features-item {
+flex-basis: calc((100% - 32px) / 2);
+}
+
+.taste {
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+}
+
+.taste-title {
+     max-width: 411px;
+     margin-bottom: 28px;
+}
+
+.taste-text {
+    max-width: 486px;
+    margin-bottom: 50px;
+}
+
+.taste-list {
+    gap: 32px;
+}
+
+.taste-item {
+    width: calc((100% - 32px) / 2);
+}
+
+.made {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-wrapper {
+
+  }
+.made-title {
+    margin-bottom: 50px;
+}
+
+  .made-content {
+    margin-bottom: 32px;
+  }
+
+  .made-subtitle {
+    margin-bottom: 28px;
+  }
+
+  .review {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .review-list {
+    gap: 48px 16px;
+    justify-content: center;
+    margin-bottom: 50px;
+
+  }
+
+  .review-item {
+  width: ((100% - 16px) / 2 );  
+  }
+
+}
+
+
+
+@media screen and (min-width: 1166px) {
+.container, .made .container {
+max-width: 1166px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.features-list {
+    padding-left: 36px;
+    padding-left: 36px;
+    gap: 70px;
+
+}
+
+.features-item {
+    flex-basis: calc((100% - 140px) / 3);
+    padding-right: 0;
+}
+
+.features-item-icon {
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #4c4c4c;
+    margin-bottom: 22px;
+}
+.taste {
+margin-top: 100px;
+padding-bottom: 50px;
+}
+
+.taste-list {
+    gap: 29px 19px;
+}
+
+.taste-item {
+    width: calc((100% - 57px) / 4); 
+}
+
+
+.made {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.made-wrapper {
+    flex-wrap: nowrap;
+}
+
+
+  .made-item {
+    margin-bottom: 24px;
+  }
+
+.review {
+padding-top: 50px;
+padding-bottom: 100px;
+}
+
+.review-list {
+   gap: 28px; 
+}
+
+.review-item {
+width: calc((100% - 56px) / 3);
+}
+
+
